@@ -1,39 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   long_hexa_printer.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brouane <brouane@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/07 21:38:35 by bmarbouh          #+#    #+#             */
-/*   Updated: 2025/11/14 19:22:20 by brouane          ###   ########.fr       */
+/*   Created: 2025/11/12 20:53:34 by brouane           #+#    #+#             */
+/*   Updated: 2025/11/14 19:44:01 by brouane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf(const char *format, ...)
+int	long_hexa_printer(unsigned long number)
 {
-	int		count;
-	va_list	ap;
-	int		i;
+	char	*hexa_base;
+	int		counter;
 
-	if (!format)
-		return (-1);
-	va_start(ap, format);
-	count = 0;
-	i = 0;
-	while (format[i])
-	{
-		if (format[i] == '%' && format[i + 1])
-		{
-			i++;
-			count += ft_print_format(format[i], &ap);
-		}
-		else
-			count += write(1, &format[i], 1);
-		i++;
-	}
-	va_end(ap);
-	return (count);
+	hexa_base = "0123456789abcdef";
+	counter = 0;
+	if (number > 15)
+		counter += lower_hexa_printer(number / 16);
+	counter += char_printer(hexa_base[number % 16]);
+	return (counter);
 }

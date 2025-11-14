@@ -6,13 +6,13 @@
 /*   By: brouane <brouane@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 20:53:34 by brouane           #+#    #+#             */
-/*   Updated: 2025/11/13 20:28:04 by brouane          ###   ########.fr       */
+/*   Updated: 2025/11/14 19:43:01 by brouane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	lower_hexa_printer(unsigned long number)
+int	lower_hexa_printer(unsigned int number)
 {
 	char	*hexa_base;
 	int		counter;

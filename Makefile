@@ -1,5 +1,6 @@
-SRCS =	ft_print_address.c ft_print_char.c ft_print_decimal.c \
-		ft_print_format.c ft_print_hex.c ft_print_str.c ft_print_unsigned.c ft_printf.c
+SRCS = 	address_printer.c char_printer.c format_checker.c /
+		ft_printf.c lower_hexa_printer.c number_printer.c /
+		string_printer.c unsigned_printer.c upper_hexa_printer.c
 
 OBJS = ${SRCS:.c=.o}
 NAME = libftprintf.a
