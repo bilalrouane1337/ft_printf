@@ -6,7 +6,7 @@
 /*   By: brouane <brouane@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 20:53:34 by brouane           #+#    #+#             */
-/*   Updated: 2025/11/14 19:44:01 by brouane          ###   ########.fr       */
+/*   Updated: 2025/11/15 18:23:24 by brouane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	long_hexa_printer(unsigned long number)
 	hexa_base = "0123456789abcdef";
 	counter = 0;
 	if (number > 15)
-		counter += lower_hexa_printer(number / 16);
+		counter += long_hexa_printer(number / 16);
 	counter += char_printer(hexa_base[number % 16]);
 	return (counter);
 }

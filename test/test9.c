@@ -1,138 +1,139 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
 
-    printf("A: %A", 1.1);
+    printf("a: %a", 1.1);
     printf("\n");
-    printf("A: %A\n", 1.1);
+    printf("a: % a\n", 1.1);
+    printf("\n");
+    printf("a: %+a\n", 1.1);
+    printf("\n");
+    printf("a: %#a\n", 1.1);
     printf("----------------------------\n");
 
-    printf("B: %B", 2);
+    printf("b: %b", 2);
     printf("\n");
-    printf("B: %B\n", 2);
+    printf("b: %b\n", 2);
     printf("----------------------------\n");
 
-    printf("C: %C", 'C');
+    printf("c: %c", 'c');
     printf("\n");
-    printf("C: %C\n", 'C');
+    printf("c: %c\n", 'c');
     printf("----------------------------\n");
 
-    printf("D: %D", 4);
+    printf("d: %d", 4);
     printf("\n");
-    printf("D: %D\n", 4);
+    printf("d: %d\n", 4);
     printf("----------------------------\n");
 
-    printf("E: %E", 5.5);
+    printf("e: %e", 5.5);
     printf("\n");
-    printf("E: %E\n", 5.5);
+    printf("e: %e\n", 5.5);
     printf("----------------------------\n");
 
-    printf("F: %F", 6.6);
+    printf("f: %f", 6.6);
     printf("\n");
-    printf("F: %F\n", 6.6);
+    printf("f: %f\n", 6.6);
     printf("----------------------------\n");
 
-    printf("G: %G", 7.7);
+    printf("g: %g", 7.7777);
     printf("\n");
-    printf("G: %G\n", 7.7);
+    printf("g: %g\n", 7.7777);
     printf("----------------------------\n");
 
-    printf("H: %H", 8);
+    printf("h: %h", 8);
     printf("\n");
-    printf("H: %H\n", 8);
+    printf("h: %h\n", 8);
     printf("----------------------------\n");
 
-    printf("I: %I", 9);
+    printf("i: %i", 9);
     printf("\n");
-    printf("I: %I\n", 9);
+    printf("i: %i\n", 9);
     printf("----------------------------\n");
 
-    printf("J: %J", 10);
+    printf("j: %j", 10);
     printf("\n");
-    printf("J: %J\n", 10);
+    printf("j: %j\n", 10);
     printf("----------------------------\n");
 
-    printf("K: %K", 11);
+    printf("k: %k", 11);
     printf("\n");
-    printf("K: %K\n", 11);
+    printf("k: %k\n", 11);
     printf("----------------------------\n");
 
-    printf("L: %L", 12L);
+    printf("l: %l", 12L);
     printf("\n");
-    printf("L: %L\n", 12L);
+    printf("l: %l\n", 12L);
     printf("----------------------------\n");
 
-    printf("M: %M", 13);
+    printf("m: %m", 13);
     printf("\n");
-    printf("M: %M\n", 13);
+    printf("m: %m\n", 13);
     printf("----------------------------\n");
 
-    printf("N: %N", &((int){0}));
+    printf("n: %n", &((int){0}));
     printf("\n");
-    printf("N: %N\n", &((int){0}));
+    printf("n: %n\n", &((int){0}));
     printf("----------------------------\n");
 
-    printf("O: %O", 14);
+    printf("o: %o", 14);
     printf("\n");
-    printf("O: %O\n", 14);
+    printf("o: %o\n", 14);
     printf("----------------------------\n");
 
-    printf("P: %P", (void*)0x1234);
+    printf("p: %p", (void*)0x1234);
     printf("\n");
-    printf("P: %P\n", (void*)0x1234);
+    printf("p: %p\n", (void*)0x1234);
     printf("----------------------------\n");
 
-    printf("Q: %Q", 15);
+    printf("q: %q", 15);
     printf("\n");
-    printf("Q: %Q\n", 15);
+    printf("q: %q\n", 15);
     printf("----------------------------\n");
 
-    printf("R: %R", 16);
+    printf("r: %r", 16);
     printf("\n");
-    printf("R: %R\n", 16);
+    printf("r: %r\n", 16);
     printf("----------------------------\n");
 
-    printf("S: %S", "hello");
+    printf("s: %s", "hello");
     printf("\n");
-    printf("S: %S\n", "hello");
+    printf("s: %s\n", "hello");
     printf("----------------------------\n");
 
-    printf("T: %T", 17);
+    printf("t: %t", 17);
     printf("\n");
-    printf("T: %T\n", 17);
+    printf("t: %t\n", 17);
     printf("----------------------------\n");
 
-    printf("U: %U", 18);
+    printf("u: %u", 18);
     printf("\n");
-    printf("U: %U\n", 18);
+    printf("u: %u\n", 18);
     printf("----------------------------\n");
 
-    printf("V: %V", 19);
+    printf("v: %v", 19);
     printf("\n");
-    printf("V: %V\n", 19);
+    printf("v: %v\n", 19);
     printf("----------------------------\n");
 
-    printf("W: %W", 20);
+    printf("w: %w", 20);
     printf("\n");
-    printf("W: %W\n", 20);
+    printf("w: %w\n", 20);
     printf("----------------------------\n");
 
-    printf("X: %X", 21);
+    printf("x: %x", 21);
     printf("\n");
-    printf("X: %X\n", 21);
+    printf("x: %x\n", 21);
     printf("----------------------------\n");
 
-    printf("Y: %Y", 22);
+    printf("y: %y", 22);
     printf("\n");
-    printf("Y: %Y\n", 22);
+    printf("y: %y\n", 22);
     printf("----------------------------\n");
 
-    printf("Z: %Z", 23);
+    printf("z: %z", 23);
     printf("\n");
-    printf("Z: %Z\n", 23);
+    printf("z: %z\n", 23);
     printf("----------------------------\n");
-
 
 }
-

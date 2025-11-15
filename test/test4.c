@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-void print_numbers(float count, ...) // count tells how many numbers will follow
+void print_numbers(int count, ...) // count tells how many numbers will follow
 {
     va_list args;                // declare a list to hold the arguments
     va_start(args, count);       // initialize the list
@@ -19,5 +19,4 @@ void print_numbers(float count, ...) // count tells how many numbers will follow
 int main(void)
 {
     print_numbers(1, 3, 10, 20, 30);    // prints: 10 20 30
-    print_numbers(2, 5, 1, 2, 3, 4, 5); // prints: 1 2 3 4 5
 }

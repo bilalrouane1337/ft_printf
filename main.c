@@ -6,7 +6,7 @@
 /*   By: brouane <brouane@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 21:27:51 by brouane           #+#    #+#             */
-/*   Updated: 2025/11/14 22:25:39 by brouane          ###   ########.fr       */
+/*   Updated: 2025/11/15 18:18:32 by brouane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,18 @@
 
 int main()
 {
-    char name[] = "world";
-    int x = printf("hello: %h", 5);
-    printf("%d\n", x);
+
+    unsigned long un = 4294967296;
+    printf("u: %p\n", un);
+    ft_printf("u: %p\n", un);
+    
+    // char name[] = "world";
+    // int x = printf("hello: %h", 5);
+    // printf("%d\n", x);
 
     
-    int y = printf("hello: %h ", 5);
-    printf("%d", y);
+    // int y = printf("hello: %h ", 5);
+    // printf("%d", y);
 
     
     // int x = printf(""); int x = ft_printf(""); ✅ 0
